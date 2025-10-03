@@ -61,10 +61,10 @@ export default function HomePage() {
         <h2 className="text-4xl font-bold text-center mb-12">Popular Dishes</h2>
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {[
-            { title: "Grilled Sandwich", img: "https://images.unsplash.com/photo-1606756790138-8e31f7b01f1c" },
+            { title: "Grilled Sandwich", img: "https://bing.com/th?id=OSK.3024677db579d2e4dd16a0efb5b9531c" },
             { title: "Pasta", img: "https://images.unsplash.com/photo-1525755662778-989d0524087e" },
-            { title: "Ice Cream", img: "https://images.unsplash.com/photo-1625943551731-6be81a7abf7a" },
-            { title: "Chicken Curry", img: "https://images.unsplash.com/photo-1604909052942-82b9a6c7c378" },
+            { title: "Ice Cream", img: "https://th.bing.com/th/id/R.8a6880b78938d470337448c85a4a5a62?rik=fRXTzRmMCANJBg&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fnN83CjZ.jpg&ehk=VlEL%2fmofCpu3Jav3zGOYSzETJsaCrON5mxWzIAv3cdw%3d&risl=&pid=ImgRaw&r=0" },
+            { title: "Chicken Curry", img: "https://tse4.mm.bing.net/th/id/OIP.dVTk-vYa2BpQDxEOYNGirAHaHa?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" },
           ].map((dish, i) => (
             <div
               key={i}
@@ -82,7 +82,7 @@ export default function HomePage() {
       {/* Featured Recipe */}
       <section className="py-24 px-6 md:px-16 flex flex-col md:flex-row gap-12 items-center">
         <img
-          src="https://images.unsplash.com/photo-1617196035154-6f83f1a3d09e"
+          src="https://media.istockphoto.com/id/666908954/photo/handsome-chef-pouring-olive-oil-on-meal.jpg?b=1&s=170667a&w=0&k=20&c=n5gq9dCc1i5e8XjXSfGPm-vBQDZaEU7kVGETVfLsYk4="
           alt="Featured Recipe"
           className="rounded-xl shadow-xl md:w-1/2 object-cover"
         />

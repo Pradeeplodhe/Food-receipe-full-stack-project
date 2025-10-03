@@ -27,28 +27,35 @@
 
 
 
-<nav className="bg-gradient-to-r from-blue-800 to-indigo-600 text-white px-6 py-3 shadow-lg">
+<nav className="bg-gradient-to-r from-gray-900 via-black to-gray-800 text-white px-6 py-4 shadow-xl">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        
-        {/* Logo */}
-        <div className="text-2xl font-extrabold tracking-wide">
+
+        {/* Logo with Gradient Animation */}
+        <div className="text-2xl font-extrabold tracking-wide bg-gradient-to-r from-red-500 via-yellow-400 to-red-600 text-transparent bg-clip-text animate-pulse">
           🍴 FoodRecipe
         </div>
 
         {/* Links */}
         <div className="hidden md:flex gap-8 text-lg font-medium">
-          <Link to="/" className="hover:text-yellow-300 transition">Home</Link>
-          <Link to="/Recepi" className="hover:text-yellow-300 transition">Recipes</Link>
-          <Link to="/Addyourreipe" className="hover:text-yellow-300 transition">Add Recipe</Link>
-          <Link to="/PlaceOrder" className="hover:text-yellow-300 transition">Order</Link>
-          <Link to="/profile" className="hover:text-yellow-300 transition">Profile</Link>
+          <Link 
+            to="/" 
+            className="relative group transition"
+          >
+            Home
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-red-500 group-hover:w-full transition-all duration-300"></span>
+          </Link>
+          <Link to="/Recepi" className="hover:text-red-400 transition">Recipes</Link>
+          <Link to="/Addyourreipe" className="hover:text-red-400 transition">Add Recipe</Link>
+          <Link to="/PlaceOrder" className="hover:text-red-400 transition">Order</Link>
+          <Link to="/profile" className="hover:text-red-400 transition">Profile</Link>
         </div>
 
-        {/* Login Button */}
+        {/* Login Button with Gradient */}
         <div>
           <Link 
             to="/loginData" 
-            className="bg-yellow-400 text-blue-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-300 transition"
+            className="bg-gradient-to-r from-red-500 to-red-700 px-5 py-2 rounded-lg font-semibold 
+                       hover:from-red-600 hover:to-red-800 transition shadow-lg hover:shadow-red-500/50"
           >
             Login
           </Link>
