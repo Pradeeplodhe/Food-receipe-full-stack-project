@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react";
-
+import individualReceipe from "./IndividualReceipe";
 export default function PlaceOrder() {
   const [foods, setFoods] = useState([]);
 
@@ -42,7 +42,10 @@ export default function PlaceOrder() {
               </p>
               <p className="text-sm text-gray-200 line-clamp-3">{food.description}</p>
               <button className="mt-4 w-full bg-red-600 text-white px-4 py-2 
-                                 rounded-lg hover:bg-red-700 transition shadow-md">
+                                 rounded-lg hover:bg-red-700 transition shadow-md"
+                                 
+                               
+                                 >
                 View Recipe
               </button>
             </div>

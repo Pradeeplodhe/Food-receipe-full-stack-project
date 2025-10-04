@@ -126,8 +126,10 @@
 
 import React, { useState } from "react";
 import axios from "axios";
-
+import BlueNotification from "../../Notification/BlueNotification";
 export default function Addyourrceipe() {
+
+  const[show,setshow]=useState(false);
   const [formData, setFormData] = useState({
     name: "",
     image: "",
@@ -146,13 +148,15 @@ export default function Addyourrceipe() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Recipe Added:", formData);
-    alert("🎉 Recipe Added Successfully!");
+    // alert("🎉 Recipe Added Successfully!");
     setFormData({ name: "", image: "", ingredients: "", time: "", description: "" });
  
+   setshow(true);
+   setTimeout(()=>{
+     setshow(false)
+   },3000)
 
-
-             axios
-            .post("http://localhost:5000/api/dises", formData)
+             axios.post("http://localhost:5000/a/api/dises", formData)
             .then((response) => {
                console.log("Post created successfully!");
             })
@@ -165,6 +169,10 @@ export default function Addyourrceipe() {
   return (
     <div className="relative min-h-screen flex items-center justify-center">
       {/* Background with food image + animated gradient overlay */}
+     
+    
+{<BlueNotification show={show} text=" Recipe added  succecfullY  
+        "/>}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{

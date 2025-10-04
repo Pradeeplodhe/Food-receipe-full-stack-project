@@ -1,7 +1,7 @@
 // src/components/FoodSignupPage.jsx
 import { useState } from "react";
 // import { FaUser, FaEnvelope, FaLock, FaUtensils } from "react-icons/fa";
-
+import SuccessMessage from "../../Notification/SuccesMessage";
 export default function SignupPage() {
   const [formData, setFormData] = useState({
     name: "",
@@ -9,7 +9,13 @@ export default function SignupPage() {
     password: "",
     confirmPassword: "",
   });
-
+const[show,setshow]=useState(false);
+const handleNotification=()=>{
+    setshow(true);
+    setTimeout(()=>{
+setshow(false);
+    },3000)
+}
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -43,7 +49,13 @@ export default function SignupPage() {
 
   return (
     <div className="h-screen w-full flex items-center justify-center bg-cover bg-center" 
+
+
          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1504674900247-0877df9cc836')" }}>
+
+
+    {<SuccessMessage show={show} text=" Congratulation You are Register succecfull 
+        "/>}
       <div className="bg-white/90 backdrop-blur-xl p-8 rounded-3xl shadow-2xl w-full max-w-md">
         
         {/* Logo */}
@@ -121,6 +133,8 @@ export default function SignupPage() {
           <button
             type="submit"
             className="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-300"
+          
+          onClick={handleNotification}
           >
             🍔 Sign Up & Start Ordering
           </button>
