@@ -38,13 +38,12 @@ https://cloud.mongodb.com/v2/68d296b28f832109333e14bc#/migration
             ))
             .catch((err) => console.log(err))
 
-
             console.log("data regiter data send succfully" ,data)
 
 
  };
 
-
+ 
 
   return (
     
@@ -53,7 +52,7 @@ https://cloud.mongodb.com/v2/68d296b28f832109333e14bc#/migration
     <div>
 
 
-{<SuccessMessage show={show} text=" Congratulation You are login succecfull  Yo can Acces All the page
+ {<SuccessMessage show={show} text=" Congratulation You are login succecfull  Yo can Acces All the page
         "/>}
   
 
