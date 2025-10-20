@@ -57,5 +57,19 @@
     "ingredients": "12",
     "time": "3e3",
     "description": "12"
+  },
+  {
+    "name": "panner ",
+    "image": "https://tse2.mm.bing.net/th/id/OIP.PFsB46tlyj9XG1X39uswTAHaHa?cb=12&w=1200&h=1200&rs=1&pid=ImgDetMain&o=7&rm=3",
+    "ingredients": "paneer water milk",
+    "time": "30",
+    "description": "stephttps://tse2.mm.bing.net/th/id/OIP.PFsB46tlyj9XG1X39uswTAHaHa?cb=12&w=1200&h=1200&rs=1&pid=ImgDetMain&o=7&rm=3"
+  },
+  {
+    "name": "panner ",
+    "image": "https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?cs=srgb&dl=appetizer-bowl-delicious-1640772.jpg&fm=jpg",
+    "ingredients": "n",
+    "time": "30",
+    "description": "ka"
   }
 ]
