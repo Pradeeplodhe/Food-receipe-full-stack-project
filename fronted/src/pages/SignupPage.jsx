@@ -26,13 +26,22 @@ setshow(false);
 
 
 
- fetch("http://localhost:5000/info/register", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(formData)
-        })
+//  fetch("http://localhost:5000/info/register", {
+//             method: "POST",
+//             headers: {
+//                 "Content-Type": "application/json"
+//             },
+//             body: JSON.stringify(formData)
+//         })
+
+   fetch("https://food-receipe-full-stack-project-4.onrender.com/info/register", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(formData)
+})
+
             .then((res) => res.json())
             .then((data) => console.log(data))
             .catch((err) => console.log("error is     " +err))

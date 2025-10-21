@@ -22,14 +22,22 @@ email, password
 https://cloud.mongodb.com/v2/68d296b28f832109333e14bc#/migration
 
 
- fetch("http://localhost:5000/info/login", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        })
-            .then((res) => res.json())
+//  fetch("http://localhost:5000/info/login", {
+//             method: "POST",
+//             headers: {
+//                 "Content-Type": "application/json"
+//             },
+//             body: JSON.stringify(data)
+//         })
+           fetch("https://food-receipe-full-stack-project-4.onrender.com/info/login", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+})
+
+        .then((res) => res.json())
             .then((data) => (
               // console.log(data.msg)
                setstatus(data.msg),

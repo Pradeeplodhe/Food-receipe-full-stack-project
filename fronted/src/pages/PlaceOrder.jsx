@@ -4,7 +4,8 @@ import individualReceipe from "./IndividualReceipe";
 export default function PlaceOrder() {
   const [foods, setFoods] = useState([]);
 
-  const API_URL = "http://localhost:5000/a/api/dises";
+  // const API_URL = "http://localhost:5000/a/api/dises";
+   const API_URL = "https://food-receipe-full-stack-project-4.onrender.com/a/api/dises";
 
   useEffect(() => {
     fetch(API_URL)

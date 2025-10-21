@@ -156,7 +156,8 @@ export default function Addyourrceipe() {
      setshow(false)
    },3000)
 
-             axios.post("http://localhost:5000/a/api/dises", formData)
+            //  axios.post("http://localhost:5000/a/api/dises", formData)
+            axios.post("https://food-receipe-full-stack-project-4.onrender.com/a/api/dises", formData)
             .then((response) => {
                console.log("Post created successfully!");
             })
