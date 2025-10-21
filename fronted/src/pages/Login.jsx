@@ -19,7 +19,7 @@ email, password
  
 
  
-https://cloud.mongodb.com/v2/68d296b28f832109333e14bc#/migration
+// https://cloud.mongodb.com/v2/68d296b28f832109333e14bc#/migration
 
 
 //  fetch("http://localhost:5000/info/login", {
